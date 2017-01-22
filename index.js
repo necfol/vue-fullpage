@@ -33,7 +33,7 @@
     var that = fullpage
     var vm = vnode.context,
       animateVal = binding.value;
-    vm.$on('toogle_animate', function (curIndex) {
+    vm.$on('toogle_animate', function(curIndex) {
       var curPage = +el.parentNode.getAttribute('data-id')
       if (curIndex === curPage) {
         that.addAnimateActive(el, animateVal)
@@ -127,6 +127,8 @@
       that.startY = e.targetTouches[0].pageY;
     })
     el.addEventListener('touchend', function(e) {
+      if (Math.abs(e.changedTouches[0].pageY - that.startY) < 3)
+        return
       if (that.o.movingFlag) {
         return false;
       }
@@ -155,7 +157,7 @@
     that.nextIndex = curIndex;
     that.o.movingFlag = true
     var flag = that.o.beforeChange(that.prevIndex, that.nextIndex)
-    // beforeChange中返回false则阻止滚屏发生
+      // beforeChange中返回false则阻止滚屏发生
     if (flag === false) {
       return false;
     }
