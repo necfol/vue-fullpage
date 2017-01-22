@@ -1,6 +1,6 @@
 {
-  "name": "vue-fullpage",
-  "version": "1.1.0",
+  "name": "necfol-vue-fullpage",
+  "version": "0.0.1",
   "description": "a single page scroll plugin for vue.js ",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wendaosanshou/vue-fullpage.git"
+    "url": "git+https://github.com/necfol/vue-fullpage.git"
   },
   "keywords": [
     "vue",
@@ -16,10 +16,13 @@
     "single",
     "page"
   ],
-  "author": "wendaosanshou",
+  "author": "necfol",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wendaosanshou/vue-fullpage/issues"
+    "url": "https://github.com/necfol/vue-fullpage/issues"
   },
-  "homepage": "https://github.com/wendaosanshou/vue-fullpage#readme"
+  "homepage": "https://github.com/necfol/vue-fullpage#readme",
+  "directories": {
+    "doc": "doc"
+  }
 }
